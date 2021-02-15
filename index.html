@@ -1,38 +1,43 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <title>div Elements</title>
 </head>
+
 <body>
-    <div class="logo">
-        <img src="img/Group.svg" alt="Логотип">
-    </div>
-    <div class="colons-1">
-        <form class="form">
-            <label class="form__text-field">
-                <div class="form__title">
-                    <p class="form__text-field">Text field</p>
-                    <p class="form__default">Default</p>
-                </div>
-                <input type="email" class="form__email form__email_color" placeholder="Email">
-            </label>
-        </form>
-        <form class="form">
-            <label class="form__text-field">
-                <div class="form__title">
-                    <p class="form__text-field">Text field</p>
-                    <p class="form__hover-focus">Hover / Focus</p>
-                </div>
-                <input type="email" class="form__email qwe" placeholder="This is pretty awesome">
-            </label>
-        </form>
-        <form class="form" action="">
-            <p class="form__dropdown">dropdown</p>
-            <select class="form__email" name="" id="">Сколько гостей
-                <option value=""></option>
-            </select>
-        </form>
+    <div class="container">
+        <div class="logo">
+            <img src="img/Group.svg" alt="Логотип">
+        </div>
+        <div class="colons-1">
+            <form class="form">
+                <label class="form__text-field">
+                    <div class="form__title">
+                        <p class="form__text-field-title">Text field</p>
+                        <p class="form__text-default">Default</p>
+                    </div>
+                    <input type="email" class="form__email" placeholder="Email">
+                </label>
+            </form>
+            <form class="form">
+                <label class="form__text-field">
+                    <div class="form__title">
+                        <p class="form__text-field-title">Text field</p>
+                        <p class="form__hover-focus">Hover / Focus</p>
+                    </div>
+                    <input type="email" class="form__email form__email_focus" placeholder="This is pretty awesome">
+                </label>
+            </form>
+            <form class="dropdown" action="">
+                <p class="dropdown__title">dropdown</p>
+                <select class="dropdown__style" name="" id="">
+                    <option disabled value="">Сколько гостей</option>
+                </select>
+            </form>
+        </div>
     </div>
 </body>
+
 </html>
