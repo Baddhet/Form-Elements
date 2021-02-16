@@ -1,19 +1,20 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("../fonts/Montserrat-Regular.eot");
-    src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"),
-        url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
+    src: url("fonts/Montserrat-Regular.eot");
+    src: local("☺"), url("fonts/Montserrat-Regular.woff") format("woff"),
+        url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "Montserrat";
-    src: url("../fonts/Montserrat-Bold.eot");
-    src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"),
-        url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+    src: url("fonts/Montserrat-Bold.eot");
+    src: local("☺"), url("fonts/Montserrat-Bold.woff") format("woff"),
+        url("fonts/Montserrat-Bold.ttf") format("truetype"), url("fonts/Montserrat-Bold.svg") format("svg");
     font-weight: 700;
     font-style: normal;
 }
+
 body {
     margin: 0px;
     font-family: "Montserrat";
@@ -24,8 +25,6 @@ p,
 input,
 form {
     margin: 0;
-}
-.container {
 }
 .logo {
     position: absolute;
@@ -156,7 +155,7 @@ form {
         width: 20px;
         margin-bottom: 10.5px;
         margin-right: 10px;
-        vertical-align: top;
+        vertical-align: middle;
         cursor: pointer;
         float: left;
         outline: none;
@@ -183,7 +182,6 @@ form {
         left: 6.5px;
         top: 8.3px;
         transform: rotate(-45deg);
-        background-color: black;
         background: linear-gradient(-45deg, #bc9cff 50%, #8ba4f9 100%);
     }
 
@@ -192,6 +190,128 @@ form {
         line-height: 18px;
         color: rgba(31, 32, 65, 0.5);
         cursor: pointer;
-        margin-bottom: 41px;
     }
+}
+.radio-buttons {
+    &__title {
+        margin-top: 41px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+    label {
+        color: rgba(31, 32, 65, 0.75);
+        font-size: 14px;
+        line-height: 24px;
+        margin-left: 10px;
+        margin-right: 16px;
+    }
+    &__radio {
+        -webkit-appearance: none;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        vertical-align: middle;
+    }
+    &__radio:checked {
+        border: 1px solid #bc9cff;
+    }
+    &__radio:checked::before {
+        content: "";
+        position: absolute;
+        margin: 3px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #bc9cff 50%, #8ba4f9 100%);
+    }
+}
+.toggle {
+    margin-top: 40px;
+    &__title {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 11.5px;
+        margin-bottom: 16.25px;
+    }
+    label {
+        color: rgba(31, 32, 65, 0.75);
+        font-size: 14px;
+        line-height: 19px;
+        margin-left: 10px;
+        position: absolute;
+    }
+    &__checkbox {
+        margin-bottom: 14px;
+        -webkit-appearance: none;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 10px;
+        height: 20px;
+        width: 40px;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        vertical-align: top;
+    }
+    &__checkbox:checked {
+        border: 1px solid #bc9cff;
+    }
+    &__checkbox:not(:checked)::before {
+        content: "";
+        left: 0;
+        position: absolute;
+        margin: 3px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: rgba(31, 32, 65, 0.25);
+    }
+    &__checkbox:checked::after {
+        content: "";
+        right: 0;
+        position: absolute;
+        margin: 3px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #bc9cff 50%, #8ba4f9 100%);
+    }
+}
+.like-button {
+    margin-top: 31px;
+    position: relative;
+    &__title {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+    &__heart {
+        -webkit-appearance: none;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 10px;
+        height: 20px;
+        width: 40px;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        vertical-align: top;
+    }
+}
+.likes-number {
+    font-family: "Montserrat";
+    font-size: 10px;
+    color: rgba(31, 32, 65, 0.25);
+    position: absolute;
+    right: 11px;
+    top: 2.5px;
+}
+.like_added {
+    border-color: #bc9cff;
+    color: #bc9cff;
 }

@@ -46,16 +46,43 @@
                     <label class="checkbox-button__text" for="smoke">Можно курить</label><br>
                 </form>
                 <form name="pets" method="POST">
-                    <input class="checkbox-button__checkbox" type="checkbox" name="" id="pets">
+                    <input class="checkbox-button__checkbox" type="checkbox" name="" id="pets" checked>
                     <label class="checkbox-button__text" for="pets">Можно с питомцами</label>
                 </form>
                 <form name="guest" method="POST">
-                    <input class="checkbox-button__checkbox" type="checkbox" name="" id="guest">
-                    <label class="checkbox-button__text" for="guest">Можно пригласить гостей <br> (до 10 человек)</label>
+                    <input class="checkbox-button__checkbox" type="checkbox" name="" id="guest" checked>
+                    <label class="checkbox-button__text" for="guest">Можно пригласить гостей <br> (до 10
+                        человек)</label>
                 </form>
+            </div>
+            <form class="radio-buttons">
+                <p class="radio-buttons__title">radio buttons</p>
+                <input class="radio-buttons__radio" type="radio" name="gender" id="man" checked><label
+                    for="man">Мужчина</label>
+                <input class="radio-buttons__radio" type="radio" name="gender" id="woman"><label
+                    for="woman">Женщина</label>
+            </form>
+            <form class="toggle">
+                <p class="toggle__title">toggle</p>
+                <div>
+                    <input class="toggle__checkbox" type="checkbox" name="" id="" checked>
+                    <label for="">Получать спецпредложения</label>
+                </div>
+                <div>
+                    <input class="toggle__checkbox" type="checkbox" name="" id="">
+                    <label for="">Получать спецпредложения</label>
+                </div>
+            </form>
+            <div class="like-button">
+                <p class="like-button__title">like button</p>
+                <button class="like-button__heart" type="button" value="">
+                    <i class="material-icons">favorite_border</i><span class="likes-number">2</span>
+                    <i class="material-icons">favorite</i>
+                </button>
             </div>
         </div>
     </div>
+    <script src="like.js"></script>
 </body>
 
 </html>
