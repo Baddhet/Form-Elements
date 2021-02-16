@@ -13,7 +13,7 @@
         </div>
         <div class="colons-1">
             <form class="form">
-                <label class="form__text-field">
+                <label>
                     <div class="form__title">
                         <p class="form__text-field-title">Text field</p>
                         <p class="form__text-default">Default</p>
@@ -22,20 +22,38 @@
                 </label>
             </form>
             <form class="form">
-                <label class="form__text-field">
+                <label>
                     <div class="form__title">
                         <p class="form__text-field-title">Text field</p>
-                        <p class="form__hover-focus">Hover / Focus</p>
+                        <p class="form__text-hover-focus">Hover / Focus</p>
                     </div>
-                    <input type="email" class="form__email form__email_focus" placeholder="This is pretty awesome">
+                    <input type="email" class="form__email_focus" placeholder="This is pretty awesome">
                 </label>
             </form>
             <form class="dropdown" action="">
                 <p class="dropdown__title">dropdown</p>
-                <select class="dropdown__style" name="" id="">
-                    <option disabled value="">Сколько гостей</option>
-                </select>
+                <input type="text" class="dropdown__guests" placeholder="Сколько гостей">
             </form>
+            <form class="date" action="">
+                <input type="date" class="date__form">
+            </form>
+        </div>
+        <div class="colons-2">
+            <div class="checkbox-button">
+                <p class="checkbox-button__title">checkbox buttons</p>
+                <form name="smoke" method="POST">
+                    <input class="checkbox-button__checkbox" type="checkbox" name="" id="smoke">
+                    <label class="checkbox-button__text" for="smoke">Можно курить</label><br>
+                </form>
+                <form name="pets" method="POST">
+                    <input class="checkbox-button__checkbox" type="checkbox" name="" id="pets">
+                    <label class="checkbox-button__text" for="pets">Можно с питомцами</label>
+                </form>
+                <form name="guest" method="POST">
+                    <input class="checkbox-button__checkbox" type="checkbox" name="" id="guest">
+                    <label class="checkbox-button__text" for="guest">Можно пригласить гостей <br> (до 10 человек)</label>
+                </form>
+            </div>
         </div>
     </div>
 </body>

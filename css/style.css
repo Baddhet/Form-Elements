@@ -22,15 +22,10 @@ body {
   background: #fff;
 }
 
-p {
+p,
+input,
+form {
   margin: 0;
-}
-
-.container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
 }
 
 .logo {
@@ -42,11 +37,7 @@ p {
 .colons-1 {
   width: 320px;
   margin-left: 141px;
-  margin-top: 140px;
-}
-
-.form {
-  margin-bottom: 21px;
+  margin-top: 143px;
 }
 
 .form__title {
@@ -63,11 +54,11 @@ p {
 
 .form__text-field-title {
   font-weight: 700;
-  padding: 3px 0 5px 0;
+  padding-bottom: 5px;
 }
 
 .form__text-default {
-  margin-top: 0px;
+  margin-top: -3px;
   color: rgba(31, 32, 65, 0.5);
 }
 
@@ -82,6 +73,8 @@ p {
           box-sizing: border-box;
   border-radius: 4px;
   padding-left: 14px;
+  outline: none;
+  margin-bottom: 21px;
 }
 
 .form__email::-webkit-input-placeholder {
@@ -100,14 +93,48 @@ p {
   color: rgba(31, 32, 65, 0.25);
 }
 
-.form__hover-focus {
+.form__text-hover-focus {
   height: 15px;
   text-align: end;
   color: rgba(31, 32, 65, 0.5);
   font-size: 12px;
 }
 
-.dropdown_style {
+.form__email_focus {
+  font-family: "Montserrat";
+  font-size: 13.75px;
+  width: 100%;
+  height: 44px;
+  padding-left: 14px;
+  padding-bottom: 4px;
+  line-height: 24px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.form__form__email_focus::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.form__form__email_focus:-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.form__form__email_focus::-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.form__form__email_focus::placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__guests {
   font-family: "Montserrat";
   font-size: 14px;
   width: 100%;
@@ -118,9 +145,12 @@ p {
           box-sizing: border-box;
   border-radius: 4px;
   padding-left: 14px;
+  padding-bottom: 3px;
+  outline: none;
+  color: rgba(31, 32, 65, 0.75);
 }
 
-.dropdown-title {
+.dropdown__title {
   font-weight: 700;
   padding-bottom: 5px;
   font-size: 12px;
@@ -128,4 +158,91 @@ p {
   text-transform: uppercase;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.date__form {
+  width: 100%;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  padding-left: 14px;
+}
+
+.colons-2 {
+  position: absolute;
+  top: 143.5px;
+  left: 587px;
+  width: 320px;
+}
+
+.checkbox-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.checkbox-button__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 16.5px;
+}
+
+.checkbox-button__checkbox {
+  -webkit-appearance: none;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 10.5px;
+  margin-right: 10px;
+  vertical-align: top;
+  cursor: pointer;
+  float: left;
+  outline: none;
+  position: relative;
+}
+
+.checkbox-button__checkbox:checked {
+  border: 1px solid #bc9cff;
+}
+
+.checkbox-button__checkbox:checked::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 2px;
+  left: 4px;
+  top: 9px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: linear-gradient(-135deg, #bc9cff 0%, #8ba4f9 50%);
+}
+
+.checkbox-button__checkbox:checked::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  left: 6.5px;
+  top: 8.3px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: black;
+  background: linear-gradient(-45deg, #bc9cff 50%, #8ba4f9 100%);
+}
+
+.checkbox-button__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+  margin-bottom: 41px;
 }
