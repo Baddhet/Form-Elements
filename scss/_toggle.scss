@@ -1,0 +1,51 @@
+.toggle {
+    margin-top: 40px;
+    &__title {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 11.5px;
+        margin-bottom: 16.25px;
+    }
+    label {
+        color: rgba(31, 32, 65, 0.75);
+        font-size: 14px;
+        line-height: 19px;
+        margin-left: 10px;
+        position: absolute;
+    }
+    &__checkbox {
+        margin-bottom: 14px;
+        -webkit-appearance: none;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 10px;
+        height: 20px;
+        width: 40px;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        vertical-align: top;
+    }
+    &__checkbox:checked {
+        border: 1px solid #bc9cff;
+    }
+    &__checkbox:not(:checked)::before {
+        content: "";
+        left: 0;
+        position: absolute;
+        margin: 3px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: rgba(31, 32, 65, 0.25);
+    }
+    &__checkbox:checked::after {
+        content: "";
+        right: 0;
+        position: absolute;
+        margin: 3px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #bc9cff 50%, #8ba4f9 100%);
+    }
+}

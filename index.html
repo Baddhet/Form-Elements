@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <title>div Elements</title>
+    <title>Form Elements</title>
 </head>
 
 <body>
@@ -11,7 +11,7 @@
         <div class="logo">
             <img src="img/Group.svg" alt="Логотип">
         </div>
-        <div class="colons-1">
+        <div class="column-1">
             <form class="form">
                 <label>
                     <div class="form__title">
@@ -38,7 +38,7 @@
                 <input type="date" class="date__form">
             </form>
         </div>
-        <div class="colons-2">
+        <div class="column-2">
             <div class="checkbox-button">
                 <p class="checkbox-button__title">checkbox buttons</p>
                 <form name="smoke" method="POST">
@@ -76,8 +76,12 @@
             <div class="like-button">
                 <p class="like-button__title">like button</p>
                 <button class="like-button__heart" type="button" value="">
-                    <i class="material-icons">favorite_border</i><span class="likes-number">2</span>
-                    <i class="material-icons">favorite</i>
+                    <i class="material-icons favorite" id="favorite">favorite_border</i>
+                    <span class="likes-number">2</span>
+                </button>
+                <button class="like-button__heart" type="button" value="">
+                    <i class="material-icons favorite" id="favorite">favorite_border</i>
+                    <span class="likes-number">12</span>
                 </button>
             </div>
         </div>

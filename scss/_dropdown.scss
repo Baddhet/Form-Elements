@@ -1,0 +1,26 @@
+.dropdown {
+    position: relative;
+    &__guests {
+        font-family: "Montserrat";
+        font-size: 14px;
+        width: 100%;
+        height: 44px;
+        background: #ffffff;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding-left: 14px;
+        padding-bottom: 3px;
+        outline: none;
+        color: rgba(31, 32, 65, 0.75);
+    }
+
+    &__title {
+        font-weight: 700;
+        padding-bottom: 5px;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        box-sizing: border-box;
+    }
+}
