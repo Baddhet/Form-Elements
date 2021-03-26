@@ -1,0 +1,30 @@
+.date {
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 12px;
+        font-family: inherit;
+        padding-bottom: 5px;
+    }
+
+    &__form {
+        width: 320px;
+        height: 44px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        font-family: Montserrat;
+        letter-spacing: -0.5px;
+        font-size: 14px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: rgba(31, 32, 65, 0.25);
+        padding-left: 13px;
+        padding-bottom: 3px;
+        margin-bottom: 40px;
+        outline: none;
+    }
+    &__form::-webkit-calendar-picker-indicator {
+        display: none;
+    }
+}

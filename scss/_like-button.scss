@@ -1,10 +1,11 @@
 .like-button {
     margin-top: 31px;
+    box-sizing: border-box;
     &__title {
         text-transform: uppercase;
         font-weight: bold;
         font-size: 12px;
-        margin-bottom: 16px;
+        margin-bottom: 10.5px;
     }
     &__heart {
         box-sizing: border-box;

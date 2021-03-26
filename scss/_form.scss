@@ -20,7 +20,7 @@
     &__email {
         font-family: "Montserrat";
         font-size: 14px;
-        width: 100%;
+        width: 320px;
         height: 44px;
         background: #ffffff;
         border: 1px solid rgba(31, 32, 65, 0.25);
@@ -28,10 +28,20 @@
         border-radius: 4px;
         padding-left: 14px;
         outline: none;
-        margin-bottom: 21px;
+        margin-bottom: 20px;
     }
     &__email::placeholder {
         color: rgba(31, 32, 65, 0.25);
+    }
+
+    &__email:hover, &__email:hover::placeholder {
+        border-color: rgba(31, 32, 65, 0.5);
+        color: rgba(31, 32, 65, 0.75);
+    }
+
+    &__email:focus, &__email:focus::placeholder{
+        border-color: rgba(31, 32, 65, 0.5);
+        color: rgba(31, 32, 65, 0.75);
     }
 
     &__text-hover-focus {
@@ -42,8 +52,8 @@
     }
     &__email_focus {
         font-family: "Montserrat";
-        font-size: 13.75px;
-        width: 100%;
+        font-size: 14px;
+        width: 320px;
         height: 44px;
         padding-left: 14px;
         padding-bottom: 4px;
@@ -51,9 +61,10 @@
         border: 1px solid rgba(31, 32, 65, 0.5);
         border-radius: 4px;
         margin-bottom: 20px;
+        letter-spacing: -0.2px;
         outline: none;
     }
-    &__form__email_focus::placeholder {
+    &__email_focus::placeholder {
         color: rgba(31, 32, 65, 0.75);
     }
 }

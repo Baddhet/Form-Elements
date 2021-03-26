@@ -1,5 +1,5 @@
 .rate-button {
-    margin-top: 40px;
+    margin-top: 40.25px;
     &__title {
         text-transform: uppercase;
         font-weight: bold;
@@ -9,6 +9,24 @@
 
     &__star {
         box-sizing: border-box;
-        -webkit-appearance: none;
+        user-select: none;
+        //-webkit-appearance: none;
     }
+    
+}
+.rate-button .material-icons {
+    cursor: pointer;
+    margin-left: -4px;
+    margin-right: -4.5px;
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.rate-button__star:checked + label > i {
+    background: red;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#value2 + label > p {
+    color: blue;
 }

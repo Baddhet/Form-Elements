@@ -1,9 +1,10 @@
 .dropdown {
     position: relative;
+    margin-top: 0.75px;
     &__guests {
         font-family: "Montserrat";
         font-size: 14px;
-        width: 100%;
+        width: 320px;
         height: 44px;
         background: #ffffff;
         border: 1px solid rgba(31, 32, 65, 0.25);
@@ -11,6 +12,8 @@
         border-radius: 4px;
         padding-left: 14px;
         padding-bottom: 3px;
+        margin-bottom: 22.5px;
+        line-height: 15px;
         outline: none;
         color: rgba(31, 32, 65, 0.75);
     }

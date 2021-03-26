@@ -24,26 +24,7 @@
     }
     &__checkbox:checked {
         border: 1px solid #bc9cff;
-    }
-    &__checkbox:checked::before {
-        content: "";
-        position: absolute;
-        width: 6px;
-        height: 2px;
-        left: 4px;
-        top: 9px;
-        transform: rotate(45deg);
-        background: linear-gradient(-135deg, #bc9cff 0%, #8ba4f9 50%);
-    }
-    &__checkbox:checked::after {
-        content: "";
-        position: absolute;
-        width: 8px;
-        height: 2px;
-        left: 6.5px;
-        top: 8.3px;
-        transform: rotate(-45deg);
-        background: linear-gradient(-45deg, #bc9cff 50%, #8ba4f9 100%);
+        background: url(../img/check.svg) 50% 50% no-repeat;
     }
 
     &__text {

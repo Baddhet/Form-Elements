@@ -1,8 +1,11 @@
-<html lang="en">
+<!DOCTYPE html>
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/datepicker.css">
     <title>Form Elements</title>
 </head>
 
@@ -31,13 +34,48 @@
                 </label>
             </form>
             <form class="dropdown" action="">
-                <p class="dropdown__title">dropdown</p>
-                <input type="text" class="dropdown__guests" placeholder="Сколько гостей">
+                <label>
+                    <p class="dropdown__title">dropdown</p>
+                    <input type="text" class="dropdown__guests" placeholder="Сколько гостей">
+                </label>
+
             </form>
+
+
+
+
+
             <form class="date" action="">
-                <input type="date" class="date__form">
+                <label>
+                    <p class="date__title">masked text field</p>
+                    <input type="text" class="date__form datepicker-here" placeholder="ДД.ММ.ГГГГ">
+                </label>
             </form>
+            <div class="datepicker-here">
+
+            </div>
+
+
+
+
+            <div class="date-container">
+                <form class="date-dropdown" action="">
+                    <label>
+                        <p class="date-dropdown__title">date dropdown</p>
+                        <input type="date" class="date-dropdown__form" name="" id="">
+                        <i class="material-icons">keyboard_arrow_down</i>
+                    </label>
+                </form>
+                <form class="date-dropdown" action="">
+                    <label>
+                        <p class="date-dropdown__title">date dropdown</p>
+                        <input type=" date" class="date-dropdown__form" name="" id="" value="19.08.2019">
+                            <i class="material-icons">keyboard_arrow_down</i>
+                    </label>
+                </form>
+            </div>
         </div>
+        <!----------------------------------------------------------------------------->
         <div class="column-2">
             <div class="checkbox-button">
                 <p class="checkbox-button__title">checkbox buttons</p>
@@ -76,17 +114,52 @@
             <div class="like-button">
                 <p class="like-button__title">like button</p>
                 <button class="like-button__heart" type="button" value="">
-                    <i class="material-icons favorite" id="favorite">favorite_border</i>
+                    <i class="material-icons favorite">favorite_border</i>
                     <span class="likes-number">2</span>
                 </button>
                 <button class="like-button__heart" type="button" value="">
-                    <i class="material-icons favorite" id="favorite">favorite_border</i>
+                    <i class="material-icons favorite">favorite_border</i>
                     <span class="likes-number">12</span>
                 </button>
             </div>
+            <div class="rate-button" onmousedown="return false" onselectstart="return false">
+                <p class="rate-button__title">rate button</p>
+                <label>
+                    <label>
+                        <input class="rate-button__star" type="checkbox" name="">
+                        <i class="material-icons">star_border</i>
+                    </label>
+                    <label>
+                        <input class="rate-button__star" type="checkbox" name="">
+                        <i class="material-icons">star_border</i>
+                    </label>
+                    <label>
+                        <input class="rate-button__star" type="checkbox" name="">
+                        <i class="material-icons">star_border</i>
+                    </label>
+                    <label>
+                        <input class="rate-button__star" type="checkbox" name="">
+                        <i class="material-icons">star_border</i>
+                    </label>
+                    <label>
+                        <input class="rate-button__star" type="checkbox" name="">
+                        <i class="material-icons">star_border</i>
+                    </label>
+
+            </div>
+        </div>
+        <div id="value">
+            123
+            <button id="value2"> привет </button>
+            <label for="">iuiu
+                <p>dsds</p>
+            </label>
         </div>
     </div>
-    <script src="like.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/like.js"></script>
+    <script src="js/rate.js"></script>
+    <script src="js/datepicker.js"></script>
 </body>
 
 </html>

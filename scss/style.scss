@@ -1,9 +1,15 @@
 @import "font-face";
+/*@import "normalize";*/
 body {
     margin: 0px;
     font-family: "Montserrat";
     font-weight: 400;
     background: #fff;
+    font-size: 14px;
+    line-height: 15px;
+}
+* {
+    box-sizing: border-box;
 }
 p,
 input,
@@ -19,10 +25,12 @@ form {
 @import "column-1";
 @import "form";
 @import "dropdown";
+@import "date";
+@import "date-dropdown";
 //***************COLUMN 2***************
-@import "colons-2";
-@import"checkbox-button";
+@import "column-2";
+@import "checkbox-button";
 @import "radio-buttons";
 @import "toggle";
 @import "like-button";
-
+@import "rate-button";

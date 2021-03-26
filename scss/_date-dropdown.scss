@@ -1,0 +1,45 @@
+.date-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-dropdown {
+    &__title {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        color: #1f2041;
+        padding-bottom: 5px;
+    }
+
+    &__form {
+        width: 150px;
+        height: 44px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding-left: 13.25px;
+        padding-bottom: 3px;
+        font-family: Montserrat;
+        letter-spacing: -.5px;
+        color: rgba(31, 32, 65, 0.75);
+        outline: none;
+        margin-bottom: 20px;
+    }
+    &__form::-webkit-calendar-picker-indicator {
+        display: none;
+    }
+    label {
+        position: relative;
+    }
+    i {
+        position: absolute;
+        right: 10px;
+        top: 31px;
+        color: rgba(31, 32, 65, 0.5);
+    }
+    &__form:last-child {
+        letter-spacing: 2px;
+    }
+}   
