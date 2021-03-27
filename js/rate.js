@@ -1,33 +1,14 @@
-let buttonsStar = document.querySelectorAll('.rate-button__star');
-let iconsStar = document.querySelectorAll('.rate-button > label > .material-icons');
+let buttonsStar = document.querySelectorAll('.rate-button__star')
 
-for (const buttonStar of buttonsStar) {
-    buttonStar.onclick = function () {
-        for (let element = 0; element < buttonsStar.length; element++) {
-            iconsStar[element].textContent = 'star'; 
+buttonsStar.forEach((elem) => {
+    elem.addEventListener('click', () => {
+        let star = elem.nextElementSibling
+        let arr = Array.prototype.slice.call(buttonsStar);
+        for (let i = 0; i < arr.indexOf(elem) + 1; i++) {
+            buttonsStar[i].nextElementSibling.textContent = 'star'
         }
-        /*for (const iconStar of iconsStar) {
-            console.log(iconStar.);
-            /*if (buttonStar = iconStar) {
-                iconStar.textContent = 'star';
-            }*/
-        /*if () {
-            console.log(iconStar)
-            //iconStar.textContent = 'star';
-        }*/
-        //iconsStar.textContent = 'star';
-    }
-}
-
-for (let element = 0; element < buttonsStar.length; element++) {
-    iconsStar[element].textContent = 'star'; 
-}
-
-
-/*function myRate(idStar) {
-    var x = document.querySelector('.star4');
-    console.log(idStar)
-    x.innerHTML = "star";
-    
-}
-let starBorder = document.querySelector('.rate-button__star:checked + label > i');*/
+        for (let i = buttonsStar.length - 1; i > arr.indexOf(elem); i--) {
+            buttonsStar[i].nextElementSibling.textContent = 'star_border'
+        }
+    })
+})
