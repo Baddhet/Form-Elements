@@ -48,7 +48,10 @@
   .datepicker--cell.-focus- {
     background: #f0f0f0; }
   .datepicker--cell.-current- {
-    color: #4EB5E6; }
+    border-radius: 22px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    color: #fff;
+    font-weight: bold; }
     .datepicker--cell.-current-.-focus- {
       color: #4a4a4a; }
     .datepicker--cell.-current-.-in-range- {
@@ -96,11 +99,12 @@
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin: 8px 0 3px; }
+          flex-wrap: wrap;}
 
 .datepicker--day-name {
-  color: #FF9A19;
+  color: #BC9CFF;
+  height: 40px;
+  width: 40px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -114,11 +118,14 @@
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  text-transform: uppercase;
-  font-size: .8em; }
+  font-size: 12px;
+font-weight: bold; }
 
 .datepicker--cell-day {
-  width: 14.28571%; }
+  height: 40px;
+  width: 40px; 
+  font-size: 12px;
+}
 
 .datepicker--cells-months {
   height: 170px; }
@@ -174,10 +181,11 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   box-sizing: content-box;
-  font-family: Tahoma, sans-serif;
-  font-size: 14px;
-  color: #4a4a4a;
-  width: 250px;
+  font-family: Montserrat;
+  font-size: 19px;
+  color: #1F2041;
+  width: 320px;
+  height: 369px;
   position: absolute;
   left: -100000px;
   opacity: 0;
@@ -220,7 +228,7 @@
 
 .datepicker--content {
   box-sizing: content-box;
-  padding: 4px; }
+  padding: 11px 19.5px 0 20.5px; }
   .-only-timepicker- .datepicker--content {
     display: none; }
 
@@ -296,9 +304,8 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid #efefef;
   min-height: 32px;
-  padding: 4px; }
+  padding: 15px; }
   .-only-timepicker- .datepicker--nav {
     display: none; }
 
@@ -317,7 +324,8 @@
 
 .datepicker--nav-action {
   width: 32px;
-  border-radius: 4px;
+  height: 32px;
+  border-radius: 50%;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -326,20 +334,16 @@
     background: #f0f0f0; }
   .datepicker--nav-action.-disabled- {
     visibility: hidden; }
-  .datepicker--nav-action svg {
-    width: 32px;
-    height: 32px; }
-  .datepicker--nav-action path {
-    fill: none;
-    stroke: #9c9c9c;
-    stroke-width: 2px; }
-
+  .datepicker--nav-action i {
+    color: #BC9CFF;
+  }
 .datepicker--nav-title {
   border-radius: 4px;
-  padding: 0 8px; }
+  font-weight: bold;
+  line-height: 23px;
+  padding: 0 8px 2px 9px; }
   .datepicker--nav-title i {
     font-style: normal;
-    color: #9c9c9c;
     margin-left: 5px; }
   .datepicker--nav-title:hover {
     background: #f0f0f0; }
