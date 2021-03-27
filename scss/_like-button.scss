@@ -39,9 +39,14 @@
 }
 .like_added {
     color: #bc9cff;
-    border: 0;
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    border: 1px solid #BC9CFF;
+}
+.like_added .likes-number {
+    color: #bc9cff;
 }
 .like_added .favorite {
-    color: #bc9cff;
+    //color: #bc9cff;
+     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }

@@ -1,16 +1,16 @@
-let like = document.querySelectorAll('.like-button__heart');
-let likesNumber = document.querySelector('.likes-number');
-let favorite = document.querySelector('.favorite');
+let likeButtons = document.querySelectorAll('.like-button__heart')
 
-like.onclick = function () {
-    if(like.classList.contains('like_added')) {
-        likesNumber.textContent--;
-        favorite.textContent = "favorite_border";
-    }
-    else {
-        likesNumber.textContent++;
-        favorite.textContent = "favorite";
-    }
-    like.classList.toggle('like_added');
-    likesNumber.classList.toggle('like_added');
-};
+likeButtons.forEach((elem) => {
+    elem.addEventListener('click', () => {
+        let likeNumber = elem.querySelector('.likes-number')
+        let favorite = elem.querySelector('.favorite')
+        elem.classList.toggle('like_added')
+        if (elem.classList.contains('like_added')) {
+            likeNumber.textContent++;
+            favorite.textContent = "favorite";
+        } else {
+            likeNumber.textContent--;
+            favorite.textContent = "favorite_border";
+        }
+    })
+})

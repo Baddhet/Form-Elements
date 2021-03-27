@@ -39,8 +39,7 @@
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-feature-settings: 'liga';
-          font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
 }
 
 /*@import "normalize";*/
@@ -54,8 +53,7 @@ body {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 p,
@@ -77,12 +75,8 @@ form {
 }
 
 .form__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
@@ -105,61 +99,18 @@ form {
   height: 44px;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 4px;
   padding-left: 14px;
   outline: none;
   margin-bottom: 20px;
 }
 
-.form__email::-webkit-input-placeholder {
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.form__email:-ms-input-placeholder {
-  color: rgba(31, 32, 65, 0.25);
-}
-
-.form__email::-ms-input-placeholder {
-  color: rgba(31, 32, 65, 0.25);
-}
-
 .form__email::placeholder {
   color: rgba(31, 32, 65, 0.25);
 }
 
-.form__email:hover, .form__email:hover::-webkit-input-placeholder {
-  border-color: rgba(31, 32, 65, 0.5);
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.form__email:hover, .form__email:hover:-ms-input-placeholder {
-  border-color: rgba(31, 32, 65, 0.5);
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.form__email:hover, .form__email:hover::-ms-input-placeholder {
-  border-color: rgba(31, 32, 65, 0.5);
-  color: rgba(31, 32, 65, 0.75);
-}
-
 .form__email:hover, .form__email:hover::placeholder {
-  border-color: rgba(31, 32, 65, 0.5);
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.form__email:focus, .form__email:focus::-webkit-input-placeholder {
-  border-color: rgba(31, 32, 65, 0.5);
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.form__email:focus, .form__email:focus:-ms-input-placeholder {
-  border-color: rgba(31, 32, 65, 0.5);
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.form__email:focus, .form__email:focus::-ms-input-placeholder {
   border-color: rgba(31, 32, 65, 0.5);
   color: rgba(31, 32, 65, 0.75);
 }
@@ -191,18 +142,6 @@ form {
   outline: none;
 }
 
-.form__email_focus::-webkit-input-placeholder {
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.form__email_focus:-ms-input-placeholder {
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.form__email_focus::-ms-input-placeholder {
-  color: rgba(31, 32, 65, 0.75);
-}
-
 .form__email_focus::placeholder {
   color: rgba(31, 32, 65, 0.75);
 }
@@ -219,8 +158,7 @@ form {
   height: 44px;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 4px;
   padding-left: 14px;
   padding-bottom: 3px;
@@ -236,8 +174,7 @@ form {
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .date__title {
@@ -270,12 +207,8 @@ form {
 }
 
 .date-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .date-dropdown__title {
@@ -329,13 +262,8 @@ form {
 }
 
 .checkbox-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .checkbox-button__title {
@@ -348,8 +276,7 @@ form {
 .checkbox-button__checkbox {
   -webkit-appearance: none;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 4px;
   height: 20px;
   width: 20px;
@@ -413,7 +340,6 @@ form {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 50%, #8ba4f9 100%);
 }
 
@@ -472,14 +398,12 @@ form {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 50%, #8ba4f9 100%);
 }
 
 .like-button {
   margin-top: 31px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .like-button__title {
@@ -490,8 +414,7 @@ form {
 }
 
 .like-button__heart {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-appearance: none;
   border: 1px solid rgba(31, 32, 65, 0.25);
   background-color: white;
@@ -524,13 +447,17 @@ form {
 
 .like_added {
   color: #bc9cff;
-  border: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border: 1px solid #BC9CFF;
+}
+
+.like_added .likes-number {
+  color: #bc9cff;
 }
 
 .like_added .favorite {
-  color: #bc9cff;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .rate-button {
@@ -545,19 +472,14 @@ form {
 }
 
 .rate-button__star {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  box-sizing: border-box;
+  user-select: none;
 }
 
 .rate-button .material-icons {
   cursor: pointer;
   margin-left: -4px;
   margin-right: -4.5px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
