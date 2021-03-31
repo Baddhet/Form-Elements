@@ -1,4 +1,4 @@
-let buttonsStar = document.querySelectorAll('.rate-button__star')
+const buttonsStar = document.querySelectorAll('.rate-button__star')
 
 buttonsStar.forEach((elem) => {
     elem.addEventListener('click', () => {

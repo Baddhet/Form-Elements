@@ -50,12 +50,12 @@
             <form class="date-container">
                 <div class="date-dropdown" action="">
                     <p class="date-dropdown__title">date dropdown</p>
-                    <input type="date" class="date-dropdown__form" name="" id="">
+                    <input type="date" class="date-dropdown__form">
                     <i class="material-icons date-dropdown__first">keyboard_arrow_down</i>
                 </div>
                 <div class="date-dropdown" action="">
                     <p class="date-dropdown__title">date dropdown</p>
-                    <input type=" date" class="date-dropdown__form" name="" id="" value="19.08.2019">
+                    <input type=" date" class="date-dropdown__form" value="19.08.2019">
                     <i class="material-icons date-dropdown__last">keyboard_arrow_down</i>
                 </div>
             </form>
@@ -87,8 +87,8 @@
                 <p class="room-option__title">dropdown</p>
                 <p class="room-option__default">expanded</p>
                 <div class="room-option__form">
-                    <span class="room-option__text">2 спальни, 2 кровати...</span>
-                    <i class="material-icons arrow_forward">keyboard_arrow_down</i>
+                    <span class="room-option__text" id="room-option__text">2 спальни, 2 кровати...</span>
+                    <i class="material-icons arrow_forward">keyboard_arrow_up</i>
                 </div>
                 <ul class="room-option__dropdown expanded" onmousedown="return false" onselectstart="return false">
                     <li class="room-option__list">спальни</li>
@@ -140,11 +140,11 @@
             <form class="toggle">
                 <p class="toggle__title">toggle</p>
                 <div>
-                    <input class="toggle__checkbox" type="checkbox" name="" id="" checked>
+                    <input class="toggle__checkbox" type="checkbox" checked>
                     <label for="">Получать спецпредложения</label>
                 </div>
                 <div>
-                    <input class="toggle__checkbox" type="checkbox" name="" id="">
+                    <input class="toggle__checkbox" type="checkbox">
                     <label for="">Получать спецпредложения</label>
                 </div>
             </form>
@@ -193,6 +193,7 @@
     <script src="js/like.js"></script>
     <script src="js/rate.js"></script>
     <script src="js/datepicker.js"></script>
+    <script src="js/room.js"></script>
 </body>
 
 </html>

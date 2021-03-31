@@ -358,6 +358,7 @@ form {
   background-color: white;
   padding-left: 14px;
   padding-top: 1px;
+  cursor: pointer;
 }
 
 .room-option__text {
@@ -373,6 +374,7 @@ form {
   right: 0px;
   color: rgba(31, 32, 65, 0.75);
   cursor: pointer;
+  transition: 0.2s linear;
 }
 
 .room-option__dropdown {
@@ -412,6 +414,7 @@ form {
   color: rgba(31, 32, 65, 0.25);
   font-size: 18px;
   padding-bottom: 2px;
+  cursor: pointer;
 }
 
 .room-option__number {
