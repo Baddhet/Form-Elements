@@ -190,15 +190,19 @@ form {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   font-family: Montserrat;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.07px;
   font-size: 14px;
   line-height: 15px;
   text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.25);
-  padding-left: 13px;
+  color: rgba(31, 32, 65, 0.5);
+  padding-left: 14px;
   padding-bottom: 3px;
   margin-bottom: 40px;
   outline: none;
+}
+
+.date__form::placeholder {
+  color: rgba(31, 32, 65, 0.25);
 }
 
 .date__form::-webkit-calendar-picker-indicator {
@@ -208,6 +212,7 @@ form {
 .date-container {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .date-dropdown__title {
@@ -238,10 +243,6 @@ form {
   display: none;
 }
 
-.date-dropdown label {
-  position: relative;
-}
-
 .date-dropdown i {
   position: absolute;
   right: 10px;
@@ -249,8 +250,158 @@ form {
   color: rgba(31, 32, 65, 0.5);
 }
 
-.date-dropdown__form:last-child {
-  letter-spacing: 2px;
+.date-dropdown__form::placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.filter-date {
+  position: relative;
+  margin-top: 21px;
+}
+
+.filter-date__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 197px;
+  height: 15px;
+  font-size: 12px;
+}
+
+.filter-date__form {
+  position: relative;
+  margin-top: 5px;
+  width: 266px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+
+.subscription {
+  position: relative;
+  width: 267px;
+  margin-top: 41px;
+  margin-bottom: 99px;
+}
+
+.subscription .arrow_forward {
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subscription__title {
+  width: 170px;
+  height: 15px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.subscription__form {
+  height: 44px;
+  width: 100%;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 14px;
+  padding-bottom: 3px;
+}
+
+.subscription__form::placeholder {
+  font-family: Montserrat;
+  font-size: 14px;
+}
+
+.subscription__button {
+  position: absolute;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.room-option {
+  width: 266px;
+  margin-bottom: 19px;
+}
+
+.room-option__title {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.room-option__default {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  float: right;
+  margin-top: 1px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.room-option__form {
+  position: relative;
+  width: 266px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px 4px 0 0;
+  background-color: white;
+  padding-left: 14px;
+  padding-top: 1px;
+}
+
+.room-option__text {
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 37px;
+}
+
+.room-option i {
+  position: absolute;
+  padding: 8px 9px;
+  height: 42px;
+  width: 42px;
+  right: 0px;
+  color: rgba(31, 32, 65, 0.75);
+  cursor: pointer;
+}
+
+.room-option__dropdown {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-top: none;
+  width: 266px;
+  height: 119px;
+  border-radius: 0 0px 4px 4px;
+  padding-left: 14px;
+}
+
+.room-option__list {
+  list-style-type: none;
+  font-style: 12px;
+  color: #1F2041;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.room-option__buttons {
+  border-radius: 22px;
+  height: 30px;
+  width: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  background-color: white;
+  font-style: 18px;
 }
 
 .column-2 {
@@ -489,8 +640,4 @@ form {
   background: red;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-#value2 + label > p {
-  color: blue;
 }

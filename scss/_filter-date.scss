@@ -1,0 +1,21 @@
+.filter-date {
+    position: relative;
+    margin-top: 21px;
+    &__title {
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 197px;
+        height: 15px;
+        font-size: 12px;
+    }
+    &__form {
+        position: relative;
+        margin-top: 5px;
+        width: 266px;
+        height: 44px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        outline: none;
+    }
+}

@@ -1,6 +1,7 @@
 .date-container {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .date-dropdown {
@@ -11,7 +12,6 @@
         color: #1f2041;
         padding-bottom: 5px;
     }
-
     &__form {
         width: 150px;
         height: 44px;
@@ -30,16 +30,14 @@
     &__form::-webkit-calendar-picker-indicator {
         display: none;
     }
-    label {
-        position: relative;
-    }
     i {
         position: absolute;
         right: 10px;
         top: 31px;
         color: rgba(31, 32, 65, 0.5);
     }
-    &__form:last-child {
-        letter-spacing: 2px;
+    &__form::placeholder {
+        color: rgba(31, 32, 65, 0.75);
+        //font-size: 14px;
     }
 }   

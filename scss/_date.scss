@@ -14,15 +14,18 @@
         border: 1px solid rgba(31, 32, 65, 0.25);
         border-radius: 4px;
         font-family: Montserrat;
-        letter-spacing: -0.5px;
+        letter-spacing: -0.07px;
         font-size: 14px;
         line-height: 15px;
         text-transform: uppercase;
-        color: rgba(31, 32, 65, 0.25);
-        padding-left: 13px;
+        color: rgba(31, 32, 65, 0.5);
+        padding-left: 14px;
         padding-bottom: 3px;
         margin-bottom: 40px;
         outline: none;
+    }
+    &__form::placeholder {
+        color: rgba(31, 32, 65, 0.25);
     }
     &__form::-webkit-calendar-picker-indicator {
         display: none;

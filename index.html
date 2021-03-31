@@ -24,58 +24,92 @@
                     <input type="email" class="form__email" placeholder="Email">
                 </label>
             </form>
+            <!--  -->
             <form class="form">
                 <label>
                     <div class="form__title">
                         <p class="form__text-field-title">Text field</p>
-                        <p class="form__text-hover-focus">Hover / Focus</p>
+                        <span class="form__text-hover-focus">Hover / Focus</span>
                     </div>
                     <input type="email" class="form__email_focus" placeholder="This is pretty awesome">
                 </label>
             </form>
+            <!--  -->
             <form class="dropdown" action="">
                 <label>
                     <p class="dropdown__title">dropdown</p>
                     <input type="text" class="dropdown__guests" placeholder="Сколько гостей">
                 </label>
-
             </form>
-
-
-
-
-
+            <!--  -->
             <form class="date" action="">
-                <label>
-                    <p class="date__title">masked text field</p>
-                    <input type="text" data-multiple-dates-separator=" - " class="date__form datepicker-here"
-                        placeholder="ДД.ММ.ГГГГ">
-                </label>
+                <p class="date__title">masked text field</p>
+                <input type="text" class="date__form" placeholder="ДД.ММ.ГГГГ">
             </form>
-            <div class="datepicker-here" data-range="true">
-
-            </div>
-
-
-
-
-            <div class="date-container">
-                <form class="date-dropdown" action="">
-                    <label>
-                        <p class="date-dropdown__title">date dropdown</p>
-                        <input type="date" class="date-dropdown__form" name="" id="">
-                        <i class="material-icons">keyboard_arrow_down</i>
-                    </label>
-                </form>
-                <form class="date-dropdown" action="">
-                    <label>
-                        <p class="date-dropdown__title">date dropdown</p>
-                        <input type=" date" class="date-dropdown__form" name="" id="" value="19.08.2019">
-                        <i class="material-icons">keyboard_arrow_down</i>
-                    </label>
-                </form>
-            </div>
-        </div>
+            <!--  -->
+            <form class="date-container">
+                <div class="date-dropdown" action="">
+                    <p class="date-dropdown__title">date dropdown</p>
+                    <input type="date" class="date-dropdown__form" name="" id="">
+                    <i class="material-icons date-dropdown__first">keyboard_arrow_down</i>
+                </div>
+                <div class="date-dropdown" action="">
+                    <p class="date-dropdown__title">date dropdown</p>
+                    <input type=" date" class="date-dropdown__form" name="" id="" value="19.08.2019">
+                    <i class="material-icons date-dropdown__last">keyboard_arrow_down</i>
+                </div>
+            </form>
+            <!-- filter-date -->
+            <form class="filter-date" action="">
+                <p class="filter-date__title">filter date dropdown</p>
+                <input type="text" class="filter-date__form">
+                <i class="material-icons">keyboard_arrow_down</i>
+            </form>
+            <!-- subscription -->
+            <form class="subscription" action="">
+                <p class="subscription__title">subscription text field</p>
+                <input class="subscription__form" type="text" placeholder="Email">
+                <button class="subscription__button" type="submit">
+                    <i class="material-icons arrow_forward">arrow_forward</i>
+                </button>
+            </form>
+            <!-- room-option -->
+            <form class="room-option" action="">
+                <p class="room-option__title">dropdown</p>
+                <p class="room-option__default">default</p>
+                <div class="room-option__form">
+                    <span class="room-option__text">2 спальни, 2 кровати...</span>
+                    <i class="material-icons arrow_forward">keyboard_arrow_down</i>
+                </div>
+            </form>
+            <!-- room-expanded -->
+            <form class="room-option" action="">
+                <p class="room-option__title">dropdown</p>
+                <p class="room-option__default">expanded</p>
+                <div class="room-option__form">
+                    <span class="room-option__text">2 спальни, 2 кровати...</span>
+                    <i class="material-icons arrow_forward">keyboard_arrow_down</i>
+                </div>
+                <ul class="room-option__dropdown">
+                    <li class="room-option__list">спальни
+                        <button class="room-option__buttons">-</button>
+                        <span>0</span>
+                        <button class="room-option__buttons">+</button>
+                    </li> 
+                    <li class="room-option__list">кровати
+                        <button class="room-option__buttons">-</button>
+                        <span>0</span>
+                        <button class="room-option__buttons">+</button>
+                    </li>
+                    <li class="room-option__list">ванные комнаты
+                        <button class="room-option__buttons">-</button>
+                        <span>0</span>
+                        <button class="room-option__buttons">+</button>
+                    </li>
+                </ul>
+            </form>
+            <br><br><br><br><br><br><br><br><br><br>
+        </div> <!-- Column 1 -->
         <!-- Column 2 -->
         <div class="column-2">
             <div class="checkbox-button">
@@ -150,7 +184,7 @@
                     <i class="material-icons">star_border</i>
                 </label>
             </div>
-            
+
             <!-- ---------- -->
         </div>
     </div>

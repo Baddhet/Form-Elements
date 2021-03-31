@@ -1,0 +1,70 @@
+.room-option {
+    width: 266px;
+    margin-bottom: 19px;
+    &__title {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+    }
+    &__default {
+        display: inline-block;
+        font-size: 12px;
+        text-transform: uppercase;
+        float: right;
+        margin-top: 1px;
+        color: rgba(31, 32, 65, 0.75);
+    }
+    &__form {
+        position: relative;
+        width: 266px;
+        height: 44px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px 4px 0 0;
+        background-color: white;
+        padding-left: 14px;
+        padding-top: 1px;
+
+    }
+    &__text {
+        color: rgba(31, 32, 65, 0.75);
+        line-height: 37px;
+    }
+    i {
+        position: absolute;
+        padding: 8px 9px;
+        height: 42px;
+        width: 42px;
+        right: 0px;
+        color: rgba(31, 32, 65, 0.75);
+        cursor: pointer;
+    }
+    &__dropdown {
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-top: none;
+        width: 266px;
+        height: 119px;
+        border-radius: 0 0px 4px 4px;
+        padding-left: 14px;
+        //display: none;
+    }
+    &__list {
+        list-style-type: none;
+        font-style: 12px;
+        color: #1F2041;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    &__buttons {
+        border-radius: 22px;
+        height: 30px;
+        width: 30px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        background-color: white;
+        font-style: 18px;
+    }
+}
