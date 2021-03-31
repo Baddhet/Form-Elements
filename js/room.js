@@ -20,7 +20,6 @@ roomOptionForm[1].addEventListener('click', () => {
 })
 
 roomOptionButtons.forEach((elem) => {
-    console.log(elem.nextElementSibling )
     elem.addEventListener("click", () =>{
         if (elem.innerHTML === "+") {
             elem.previousElementSibling.textContent++;
