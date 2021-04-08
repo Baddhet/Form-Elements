@@ -1,40 +1,42 @@
 @font-face {
-    font-family: "Montserrat";
-    src: url("../fonts/Montserrat-Regular.eot");
-    src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"),
-        url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: "Montserrat";
-    src: url("../fonts/Montserrat-Bold.eot");
-    src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"),
-        url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
 }
 @font-face {
-	font-family: 'Material Icons';
-	src: url('../fonts/MaterialIcons-Regular.eot');
-	src: local('☺'), url('../fonts/MaterialIcons-Regular.woff') format('woff'), url('../fonts/MaterialIcons-Regular.ttf') format('truetype'), url('../fonts/MaterialIcons-Regular.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "Material Icons";
+  src: url("../fonts/MaterialIcons-Regular.eot");
+  src: local("☺"), url("../fonts/MaterialIcons-Regular.woff") format("woff"),
+    url("../fonts/MaterialIcons-Regular.ttf") format("truetype"),
+    url("../fonts/MaterialIcons-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 .material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    font-feature-settings: 'liga';
-  }
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+}

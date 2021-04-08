@@ -1,51 +1,51 @@
 .like-button {
-    margin-top: 31px;
+  margin-top: 31px;
+  box-sizing: border-box;
+  &__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 13px;
+  }
+  &__heart {
     box-sizing: border-box;
-    &__title {
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 12px;
-        margin-bottom: 13px;
-    }
-    &__heart {
-        box-sizing: border-box;
-        -webkit-appearance: none;
-        border: 1px solid rgba(31, 32, 65, 0.25);
-        background-color: white;
-        border-radius: 10px;
-        margin: 0 6px 0 0;
-        padding: 0;
-        height: 20px;
-        width: 40px;
-        outline: none;
-        cursor: pointer;
-        position: relative;
-    }
+    -webkit-appearance: none;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 6px 0 0;
+    padding: 0;
+    height: 20px;
+    width: 40px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
 }
 .like-button .material-icons {
-    position: absolute;
-    left: 4px;
-    top: 4px;
-    font-size: 10px;
-    color: rgba(31, 32, 65, 0.25);
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  font-size: 10px;
+  color: rgba(31, 32, 65, 0.25);
 }
 .likes-number {
-    font-family: "Montserrat";
-    font-size: 10px;
-    color: rgba(31, 32, 65, 0.25);
-    position: absolute;
-    right: 10px;
-    top: 2.5px;
+  font-family: "Montserrat";
+  font-size: 10px;
+  color: rgba(31, 32, 65, 0.25);
+  position: absolute;
+  right: 10px;
+  top: 2.5px;
 }
 .like_added {
-    color: #bc9cff;
-    border: 1px solid #BC9CFF;
+  color: #bc9cff;
+  border: 1px solid #bc9cff;
 }
 .like_added .likes-number {
-    color: #bc9cff;
+  color: #bc9cff;
 }
 .like_added .favorite {
-     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

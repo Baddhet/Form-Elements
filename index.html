@@ -1,199 +1,198 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/datepicker.css">
-    <title>Form Elements</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/datepicker.css">
+  <title>Form Elements</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="img/Group.svg" alt="Логотип">
-        </div>
-        <div class="column-1">
-            <form class="form">
-                <label>
-                    <div class="form__title">
-                        <p class="form__text-field-title">Text field</p>
-                        <p class="form__text-default">Default</p>
-                    </div>
-                    <input type="email" class="form__email" placeholder="Email">
-                </label>
-            </form>
-            <!--  -->
-            <form class="form">
-                <label>
-                    <div class="form__title">
-                        <p class="form__text-field-title">Text field</p>
-                        <span class="form__text-hover-focus">Hover / Focus</span>
-                    </div>
-                    <input type="email" class="form__email_focus" placeholder="This is pretty awesome">
-                </label>
-            </form>
-            <!--  -->
-            <form class="dropdown" action="">
-                <label>
-                    <p class="dropdown__title">dropdown</p>
-                    <input type="text" class="dropdown__guests" placeholder="Сколько гостей">
-                </label>
-            </form>
-            <!--  -->
-            <form class="date" action="">
-                <p class="date__title">masked text field</p>
-                <input type="text" class="date__form" placeholder="ДД.ММ.ГГГГ">
-            </form>
-            <!--  -->
-            <form class="date-container">
-                <div class="date-dropdown" action="">
-                    <p class="date-dropdown__title">date dropdown</p>
-                    <input type="date" class="date-dropdown__form">
-                    <i class="material-icons date-dropdown__first">keyboard_arrow_down</i>
-                </div>
-                <div class="date-dropdown" action="">
-                    <p class="date-dropdown__title">date dropdown</p>
-                    <input type=" date" class="date-dropdown__form" value="19.08.2019">
-                    <i class="material-icons date-dropdown__last">keyboard_arrow_down</i>
-                </div>
-            </form>
-            <!-- filter-date -->
-            <form class="filter-date" action="">
-                <p class="filter-date__title">filter date dropdown</p>
-                <input type="text" class="filter-date__form">
-                <i class="material-icons">keyboard_arrow_down</i>
-            </form>
-            <!-- subscription -->
-            <form class="subscription" action="">
-                <p class="subscription__title">subscription text field</p>
-                <input class="subscription__form" type="text" placeholder="Email">
-                <button class="subscription__button" type="submit">
-                    <i class="material-icons arrow_forward">arrow_forward</i>
-                </button>
-            </form>
-            <!-- room-option -->
-            <form class="room-option" action="">
-                <p class="room-option__title">dropdown</p>
-                <p class="room-option__default">default</p>
-                <div class="room-option__form">
-                    <span class="room-option__text">2 спальни, 2 кровати...</span>
-                    <i class="material-icons arrow_forward">keyboard_arrow_down</i>
-                </div>
-            </form>
-            <!-- room-expanded -->
-            <form class="room-option" action="">
-                <p class="room-option__title">dropdown</p>
-                <p class="room-option__default">expanded</p>
-                <div class="room-option__form">
-                    <span class="room-option__text" id="room-option__text">2 спальни, 2 кровати...</span>
-                    <i class="material-icons arrow_forward">keyboard_arrow_up</i>
-                </div>
-                <ul class="room-option__dropdown expanded" onmousedown="return false" onselectstart="return false">
-                    <li class="room-option__list">спальни</li>
-                    <button class="room-option__buttons" type="button">-</button>
-                    <span class="room-option__number">2</span>
-                    <button class="room-option__buttons" type="button">+</button>
-
-                    <li class="room-option__list">кровати</li>
-                    <button class="room-option__buttons" type="button">-</button>
-                    <span class="room-option__number">2</span>
-                    <button class="room-option__buttons" type="button">+</button>
-
-                    <li class="room-option__list">ванные комнаты </li>
-                    <button class="room-option__buttons" type="button">-</button>
-                    <span class="room-option__number">0</span>
-                    <button class="room-option__buttons" type="button">+</button>
-
-                </ul>
-            </form>
-            <br><br><br><br><br><br><br><br><br><br>
-        </div> <!-- Column 1 -->
-        <!-- Column 2 -->
-        <div class="column-2">
-            <div class="checkbox-button">
-                <p class="checkbox-button__title">checkbox buttons</p>
-                <form name="smoke" method="POST">
-                    <input class="checkbox-button__checkbox" type="checkbox" name="" id="smoke">
-                    <label class="checkbox-button__text" for="smoke">Можно курить</label><br>
-                </form>
-                <form name="pets" method="POST">
-                    <input class="checkbox-button__checkbox" type="checkbox" name="" id="pets" checked>
-                    <label class="checkbox-button__text" for="pets">Можно с питомцами</label>
-                </form>
-                <form name="guest" method="POST">
-                    <input class="checkbox-button__checkbox" type="checkbox" name="" id="guest" checked>
-                    <label class="checkbox-button__text" for="guest">Можно пригласить гостей <br> (до 10
-                        человек)</label>
-                </form>
-            </div>
-            <!-- Radio buttons -->
-            <form class="radio-buttons">
-                <p class="radio-buttons__title">radio buttons</p>
-                <input class="radio-buttons__radio" type="radio" name="gender" id="man" checked><label
-                    for="man">Мужчина</label>
-                <input class="radio-buttons__radio" type="radio" name="gender" id="woman"><label
-                    for="woman">Женщина</label>
-            </form>
-            <!-- Toggle -->
-            <form class="toggle">
-                <p class="toggle__title">toggle</p>
-                <div>
-                    <input class="toggle__checkbox" type="checkbox" checked>
-                    <label for="">Получать спецпредложения</label>
-                </div>
-                <div>
-                    <input class="toggle__checkbox" type="checkbox">
-                    <label for="">Получать спецпредложения</label>
-                </div>
-            </form>
-            <!-- Like button -->
-            <div class="like-button">
-                <p class="like-button__title">like button</p>
-                <button class="like-button__heart" type="button" value="">
-                    <i class="material-icons favorite">favorite_border</i>
-                    <span class="likes-number">2</span>
-                </button>
-                <button class="like-button__heart like_added" type="button" value="">
-                    <i class="material-icons favorite">favorite</i>
-                    <span class="likes-number">12</span>
-                </button>
-            </div>
-            <!-- Rate button -->
-            <div class="rate-button" onmousedown="return false" onselectstart="return false">
-                <p class="rate-button__title">rate button</p>
-                <label>
-                    <input class="rate-button__star" type="checkbox" name="">
-                    <i class="material-icons">star</i>
-                </label>
-                <label>
-                    <input class="rate-button__star" type="checkbox" name="">
-                    <i class="material-icons">star</i>
-                </label>
-                <label>
-                    <input class="rate-button__star" type="checkbox" name="">
-                    <i class="material-icons">star</i>
-                </label>
-                <label>
-                    <input class="rate-button__star" type="checkbox" name="">
-                    <i class="material-icons">star</i>
-                </label>
-                <label>
-                    <input class="rate-button__star" type="checkbox" name="">
-                    <i class="material-icons">star_border</i>
-                </label>
-            </div>
-
-            <!-- ---------- -->
-        </div>
+  <div class="container">
+    <div class="logo">
+      <img src="img/Group.svg" alt="Логотип">
     </div>
-    <!-- JAVA SCRIPT -->
-    <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/like.js"></script>
-    <script src="js/rate.js"></script>
-    <script src="js/datepicker.js"></script>
-    <script src="js/room.js"></script>
+    <div class="column-1">
+      <form class="form">
+        <label>
+          <div class="form__title">
+            <p class="form__text-field-title">Text field</p>
+            <p class="form__text-default">Default</p>
+          </div>
+          <input type="email" class="form__email" placeholder="Email">
+        </label>
+      </form>
+      <!--  -->
+      <form class="form">
+        <label>
+          <div class="form__title">
+            <p class="form__text-field-title">Text field</p>
+            <span class="form__text-hover-focus">Hover / Focus</span>
+          </div>
+          <input type="email" class="form__email_focus" placeholder="This is pretty awesome">
+        </label>
+      </form>
+      <!--  -->
+      <form class="dropdown" action="">
+        <label>
+          <p class="dropdown__title">dropdown</p>
+          <input type="text" class="dropdown__guests" placeholder="Сколько гостей">
+        </label>
+      </form>
+      <!--  -->
+      <form class="date" action="">
+        <p class="date__title">masked text field</p>
+        <input type="text" class="date__form" placeholder="ДД.ММ.ГГГГ">
+      </form>
+      <!--  -->
+      <form class="date-container">
+        <div class="date-dropdown" action="">
+          <p class="date-dropdown__title">date dropdown</p>
+          <input type="date" class="date-dropdown__form">
+          <i class="material-icons date-dropdown__first">keyboard_arrow_down</i>
+        </div>
+        <div class="date-dropdown" action="">
+          <p class="date-dropdown__title">date dropdown</p>
+          <input type=" date" class="date-dropdown__form" value="19.08.2019">
+          <i class="material-icons date-dropdown__last">keyboard_arrow_down</i>
+        </div>
+      </form>
+      <!-- filter-date -->
+      <form class="filter-date" action="">
+        <p class="filter-date__title">filter date dropdown</p>
+        <input type="text" class="filter-date__form">
+        <i class="material-icons">keyboard_arrow_down</i>
+      </form>
+      <!-- subscription -->
+      <form class="subscription" action="">
+        <p class="subscription__title">subscription text field</p>
+        <input class="subscription__form" type="text" placeholder="Email">
+        <button class="subscription__button" type="submit">
+          <i class="material-icons arrow_forward">arrow_forward</i>
+        </button>
+      </form>
+      <!-- room-option -->
+      <form class="room-option" action="">
+        <p class="room-option__title">dropdown</p>
+        <p class="room-option__default">default</p>
+        <div class="room-option__form">
+          <span class="room-option__text">2 спальни, 2 кровати...</span>
+          <i class="material-icons arrow_forward">keyboard_arrow_down</i>
+        </div>
+      </form>
+      <!-- room-expanded -->
+      <form class="room-option" action="">
+        <p class="room-option__title">dropdown</p>
+        <p class="room-option__default">expanded</p>
+        <div class="room-option__form">
+          <span class="room-option__text" id="room-option__text">2 спальни, 2 кровати...</span>
+          <i class="material-icons arrow_forward">keyboard_arrow_up</i>
+        </div>
+        <ul class="room-option__dropdown expanded" onmousedown="return false" onselectstart="return false">
+          <li class="room-option__list">спальни</li>
+          <button class="room-option__buttons" type="button">-</button>
+          <span class="room-option__number">2</span>
+          <button class="room-option__buttons" type="button">+</button>
+
+          <li class="room-option__list">кровати</li>
+          <button class="room-option__buttons" type="button">-</button>
+          <span class="room-option__number">2</span>
+          <button class="room-option__buttons" type="button">+</button>
+
+          <li class="room-option__list">ванные комнаты </li>
+          <button class="room-option__buttons" type="button">-</button>
+          <span class="room-option__number">0</span>
+          <button class="room-option__buttons" type="button">+</button>
+
+        </ul>
+      </form>
+
+      <br><br><br><br><br><br><br><br><br><br>
+    </div> <!-- Column 1 -->
+    <!-- Column 2 -->
+    <div class="column-2">
+      <div class="checkbox-button">
+        <p class="checkbox-button__title">checkbox buttons</p>
+        <form name="smoke" method="POST">
+          <input class="checkbox-button__checkbox" type="checkbox" name="" id="smoke">
+          <label class="checkbox-button__text" for="smoke">Можно курить</label><br>
+        </form>
+        <form name="pets" method="POST">
+          <input class="checkbox-button__checkbox" type="checkbox" name="" id="pets" checked>
+          <label class="checkbox-button__text" for="pets">Можно с питомцами</label>
+        </form>
+        <form name="guest" method="POST">
+          <input class="checkbox-button__checkbox" type="checkbox" name="" id="guest" checked>
+          <label class="checkbox-button__text" for="guest">Можно пригласить гостей <br> (до 10
+            человек)</label>
+        </form>
+      </div>
+      <!-- Radio buttons -->
+      <form class="radio-buttons">
+        <p class="radio-buttons__title">radio buttons</p>
+        <input class="radio-buttons__radio" type="radio" name="gender" id="man" checked><label for="man">Мужчина</label>
+        <input class="radio-buttons__radio" type="radio" name="gender" id="woman"><label for="woman">Женщина</label>
+      </form>
+      <!-- Toggle -->
+      <form class="toggle">
+        <p class="toggle__title">toggle</p>
+        <div>
+          <input class="toggle__checkbox" type="checkbox" checked>
+          <label for="">Получать спецпредложения</label>
+        </div>
+        <div>
+          <input class="toggle__checkbox" type="checkbox">
+          <label for="">Получать спецпредложения</label>
+        </div>
+      </form>
+      <!-- Like button -->
+      <div class="like-button">
+        <p class="like-button__title">like button</p>
+        <button class="like-button__heart" type="button" value="">
+          <i class="material-icons favorite">favorite_border</i>
+          <span class="likes-number">2</span>
+        </button>
+        <button class="like-button__heart like_added" type="button" value="">
+          <i class="material-icons favorite">favorite</i>
+          <span class="likes-number">12</span>
+        </button>
+      </div>
+      <!-- Rate button -->
+      <div class="rate-button" onmousedown="return false" onselectstart="return false">
+        <p class="rate-button__title">rate button</p>
+        <label>
+          <input class="rate-button__star" type="checkbox" name="">
+          <i class="material-icons">star</i>
+        </label>
+        <label>
+          <input class="rate-button__star" type="checkbox" name="">
+          <i class="material-icons">star</i>
+        </label>
+        <label>
+          <input class="rate-button__star" type="checkbox" name="">
+          <i class="material-icons">star</i>
+        </label>
+        <label>
+          <input class="rate-button__star" type="checkbox" name="">
+          <i class="material-icons">star</i>
+        </label>
+        <label>
+          <input class="rate-button__star" type="checkbox" name="">
+          <i class="material-icons">star_border</i>
+        </label>
+      </div>
+
+      <!-- ---------- -->
+    </div>
+  </div>
+  <!-- JAVA SCRIPT -->
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/like.js"></script>
+  <script src="js/rate.js"></script>
+  <script src="js/datepicker.js"></script>
+  <script src="js/room.js"></script>
 </body>
 
 </html>

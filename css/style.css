@@ -2,7 +2,8 @@
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.eot");
-  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -10,21 +11,24 @@
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Bold.eot");
-  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   src: url("../fonts/MaterialIcons-Regular.eot");
-  src: local("☺"), url("../fonts/MaterialIcons-Regular.woff") format("woff"), url("../fonts/MaterialIcons-Regular.ttf") format("truetype"), url("../fonts/MaterialIcons-Regular.svg") format("svg");
+  src: local("☺"), url("../fonts/MaterialIcons-Regular.woff") format("woff"),
+    url("../fonts/MaterialIcons-Regular.ttf") format("truetype"),
+    url("../fonts/MaterialIcons-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -39,7 +43,7 @@
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
+  font-feature-settings: "liga";
 }
 
 body {
@@ -109,12 +113,14 @@ form {
   color: rgba(31, 32, 65, 0.25);
 }
 
-.form__email:hover, .form__email:hover::placeholder {
+.form__email:hover,
+.form__email:hover::placeholder {
   border-color: rgba(31, 32, 65, 0.5);
   color: rgba(31, 32, 65, 0.75);
 }
 
-.form__email:focus, .form__email:focus::placeholder {
+.form__email:focus,
+.form__email:focus::placeholder {
   border-color: rgba(31, 32, 65, 0.5);
   color: rgba(31, 32, 65, 0.75);
 }
@@ -233,7 +239,7 @@ form {
   padding-left: 13.25px;
   padding-bottom: 3px;
   font-family: Montserrat;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   color: rgba(31, 32, 65, 0.75);
   outline: none;
   margin-bottom: 20px;
@@ -309,6 +315,7 @@ form {
   border-radius: 4px;
   padding-left: 14px;
   padding-bottom: 3px;
+  outline: none;
 }
 
 .subscription__form::placeholder {
@@ -379,7 +386,7 @@ form {
 
 .room-option__dropdown {
   display: grid;
-  grid-template-columns: 152px  30px 32px 30px;
+  grid-template-columns: 152px 30px 32px 30px;
   align-items: center;
   align-content: space-between;
   position: absolute;
@@ -400,7 +407,7 @@ form {
   list-style-type: none;
   margin-bottom: 3px;
   font-size: 12px;
-  color: #1F2041;
+  color: #1f2041;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -622,7 +629,7 @@ form {
 
 .like_added {
   color: #bc9cff;
-  border: 1px solid #BC9CFF;
+  border: 1px solid #bc9cff;
 }
 
 .like_added .likes-number {

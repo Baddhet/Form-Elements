@@ -1,29 +1,28 @@
 .rate-button {
-    margin-top: 40.25px;
-    &__title {
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 12px;
-        margin-bottom: 16px;
-    }
+  margin-top: 40.25px;
+  &__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
 
-    &__star {
-        box-sizing: border-box;
-        user-select: none;
-        -webkit-appearance: none;
-    }
-    
+  &__star {
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-appearance: none;
+  }
 }
 .rate-button .material-icons {
-    cursor: pointer;
-    margin-left: -3px;
-    margin-right: -4.5px;
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  margin-left: -3px;
+  margin-right: -4.5px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .rate-button__star:checked + label > i {
-    background: red;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: red;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

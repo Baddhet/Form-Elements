@@ -1,24 +1,24 @@
 @import "font-face";
 body {
-    margin: 0px;
-    font-family: "Montserrat";
-    font-weight: 400;
-    background: #fff;
-    font-size: 14px;
-    line-height: 15px;
+  margin: 0px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  background: #fff;
+  font-size: 14px;
+  line-height: 15px;
 }
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 p,
 input,
 form {
-    margin: 0;
+  margin: 0;
 }
 .logo {
-    position: absolute;
-    left: 30px;
-    top: 30px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
 }
 //***************COLUMN 1***************
 @import "column-1";
@@ -36,4 +36,3 @@ form {
 @import "toggle";
 @import "like-button";
 @import "rate-button";
-
