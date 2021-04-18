@@ -508,6 +508,44 @@ form {
   margin-top: 168px;
 }
 
+.comfort {
+  display: flex;
+  width: 280px;
+  margin-left: 5px;
+  margin-top: 270px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.comfort__title {
+  margin-left: 11px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.comfort__subtitle {
+  margin-left: 11px;
+}
+
+.convenience {
+  display: flex;
+  width: 280px;
+  margin-left: 5px;
+  margin-top: 23px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+.convenience__title {
+  margin-left: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.convenience__subtitle {
+  margin-left: 16px;
+}
+
 .column-2 {
   position: absolute;
   top: 143.5px;
