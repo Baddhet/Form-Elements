@@ -31,7 +31,7 @@
             <p class="form__text-field-title">Text field</p>
             <span class="form__text-hover-focus">Hover / Focus</span>
           </div>
-          <input type="email" class="form__email_focus" placeholder="This is pretty awesome">
+          <input type="email" class="form__email-focus" placeholder="This is pretty awesome">
         </label>
       </form>
       <!--  -->
@@ -120,12 +120,18 @@
           <i class="material-icons">keyboard_arrow_down</i>
         </div>
         <ul class="checkbox-list__dropdown expanded">
-          <li class="checkbox-list__li"><input class="checkbox-list__item" type="checkbox" name=""><span>Завтрак</span></li>
-          <li class="checkbox-list__li"><input class="checkbox-list__item" type="checkbox" name="" checked><span>Письменный стол</span> </li>
-          <li class="checkbox-list__li"><input class="checkbox-list__item" type="checkbox" name="" checked><span>Стул для кормления</span> </li>
-          <li class="checkbox-list__li"><input class="checkbox-list__item" type="checkbox" name="" checked><span>Кроватка</span> </li>
-          <li class="checkbox-list__li"><input class="checkbox-list__item" type="checkbox" name=""><span>Телевизор</span> </li>
-          <li class="checkbox-list__li"><input class="checkbox-list__item" type="checkbox" name=""><span>Шампунь</span> </li>
+          <li class="checkbox-list__li"><input class="checkbox-list__item" type="checkbox" name=""><span>Завтрак</span>
+          </li>
+          <li class="checkbox-list__li"><input class="checkbox-list__item" type="checkbox" name=""
+              checked><span>Письменный стол</span> </li>
+          <li class="checkbox-list__li"><input class="checkbox-list__item" type="checkbox" name="" checked><span>Стул
+              для кормления</span> </li>
+          <li class="checkbox-list__li"><input class="checkbox-list__item" type="checkbox" name=""
+              checked><span>Кроватка</span> </li>
+          <li class="checkbox-list__li"><input class="checkbox-list__item" type="checkbox"
+              name=""><span>Телевизор</span> </li>
+          <li class="checkbox-list__li"><input class="checkbox-list__item" type="checkbox" name=""><span>Шампунь</span>
+          </li>
         </ul>
       </form>
       <div class="comfort">
@@ -215,7 +221,42 @@
           <i class="material-icons">star_border</i>
         </label>
       </div>
-
+      <!-- guest -->
+      <form class="guest" method="#">
+        <p class="guest__title">dropdown</p>
+        <div class="guest__form">
+          <p class="guest__form-text">Сколько гостей</p> 
+          <i class="material-icons arrow_forward">keyboard_arrow_down</i>
+        </div>
+        <ul class="guest__dropdown expanded">
+          <li class="guest__list">
+            <p class="guest__text">Взрослые</p> 
+            <div class="guest__buttons">
+              <button class="guest__button" type="button">-</button>
+              <span class="guest__number">0</span>
+              <button class="guest__button" type="button">+</button>
+            </div>
+          </li>
+          <li class="guest__list">
+            <p class="guest__text">Дети</p> 
+            <div class="guest__buttons">
+              <button class="guest__button" type="button">-</button>
+              <span class="guest__number">0</span>
+              <button class="guest__button" type="button">+</button>
+            </div>
+          </li>
+          <li class="guest__list">
+            <p class="guest__text">Младенцы</p> 
+            <div class="guest__buttons">
+              <button class="guest__button" type="button">-</button>
+              <span class="guest__number">0</span>
+              <button class="guest__button" type="button">+</button>
+            </div>
+          </li>
+          <button class="guest__reset-button" type="reset">Очистить</button>
+          <button class="guest__apply-button" type="submit">Применить</button>
+        </ul>
+      </form>
       <!-- ---------- -->
     </div>
   </div>
@@ -226,6 +267,7 @@
   <script src="js/datepicker.js"></script>
   <script src="js/room.js"></script>
   <script src="js/checkbox-list.js"></script>
+  <script src="js/guest.js"></script>
 </body>
 
 </html>
