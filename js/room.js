@@ -1,6 +1,6 @@
 const roomOptionForm = document.querySelectorAll(".room-option__form");
 const roomOptionDropdown = document.querySelector(".room-option__dropdown");
-const keyboardArrowDown = document.querySelectorAll(".room-option i");
+const keyboardArrowDown = document.querySelectorAll(".room-option__form i");
 const roomOptionButtons = document.querySelectorAll(".room-option__buttons");
 const roomOptionText = document.getElementById("room-option__text");
 

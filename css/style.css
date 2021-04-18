@@ -2,8 +2,7 @@
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.eot");
-  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"),
-    url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
+  src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -11,8 +10,7 @@
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Bold.eot");
-  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"),
-    url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
+  src: local("☺"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
@@ -20,9 +18,7 @@
 @font-face {
   font-family: "Material Icons";
   src: url("../fonts/MaterialIcons-Regular.eot");
-  src: local("☺"), url("../fonts/MaterialIcons-Regular.woff") format("woff"),
-    url("../fonts/MaterialIcons-Regular.ttf") format("truetype"),
-    url("../fonts/MaterialIcons-Regular.svg") format("svg");
+  src: local("☺"), url("../fonts/MaterialIcons-Regular.woff") format("woff"), url("../fonts/MaterialIcons-Regular.ttf") format("truetype"), url("../fonts/MaterialIcons-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -113,14 +109,12 @@ form {
   color: rgba(31, 32, 65, 0.25);
 }
 
-.form__email:hover,
-.form__email:hover::placeholder {
+.form__email:hover, .form__email:hover::placeholder {
   border-color: rgba(31, 32, 65, 0.5);
   color: rgba(31, 32, 65, 0.75);
 }
 
-.form__email:focus,
-.form__email:focus::placeholder {
+.form__email:focus, .form__email:focus::placeholder {
   border-color: rgba(31, 32, 65, 0.5);
   color: rgba(31, 32, 65, 0.75);
 }
@@ -434,6 +428,84 @@ form {
 .expanded {
   opacity: 1;
   pointer-events: auto;
+}
+
+.checkbox-list {
+  width: 266px;
+  height: 44px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.checkbox-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+}
+
+.checkbox-list ul span {
+  color: rgba(31, 32, 65, 0.5);
+  vertical-align: middle;
+}
+
+.checkbox-list__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox-list__form i {
+  margin-right: 10px;
+  font-size: 24px;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.checkbox-list__text {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.checkbox-list__dropdown {
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.1s linear;
+}
+
+.checkbox-list__li {
+  list-style-type: none;
+}
+
+.checkbox-list__item {
+  -webkit-appearance: none;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+
+.checkbox-list__item:checked {
+  border: 1px solid #bc9cff;
+  background: url(../img/check.svg) 50% 50% no-repeat;
+}
+
+.expanded {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.margin-top {
+  margin-top: 168px;
 }
 
 .column-2 {
