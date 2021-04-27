@@ -1,0 +1,21 @@
+.ui-slider-horizontal {
+  height: 6px;
+  border-radius: 3px;
+}
+.ui-widget-content {
+  border: 1px solid #dddddd;
+}
+.ui-widget-header {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+.ui-slider .ui-slider-handle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  outline: none;
+}
+.ui-slider-horizontal .ui-slider-handle {
+  top: -4px;
+}

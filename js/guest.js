@@ -18,10 +18,11 @@ guestForm.forEach((elem) => {
 });
 
 guestButtons.forEach((elem) => {
-  if (elem.innerHTML === "-") {
+  console.log(elem)
+
+  /* if (elem.innerHTML === "-" && elem.nextElementSibling.innerHTML == 1) {
     elem.style.color = "red";
-  }
-  console.log(guestButtons[0].nextElementSibling.textContent)
+  } */
 
   elem.addEventListener("click", () => {
     let formText;

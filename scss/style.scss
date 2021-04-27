@@ -20,6 +20,7 @@ form {
   left: 30px;
   top: 30px;
 }
+
 //***************COLUMN 1***************
 @import "column-1";
 @import "form";
@@ -39,3 +40,15 @@ form {
 @import "like-button";
 @import "rate-button";
 @import "guest";
+
+
+//***************COLUMN 3***************
+.column-3 {
+  position: absolute;
+  width: 320px;
+  left: 900px;
+  top: 143px;
+
+}
+@import "slider";
+@import "test";
