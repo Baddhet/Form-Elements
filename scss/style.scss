@@ -40,15 +40,17 @@ form {
 @import "like-button";
 @import "rate-button";
 @import "guest";
-
+@import "rich-checkbox-button";
 
 //***************COLUMN 3***************
 .column-3 {
   position: absolute;
   width: 320px;
-  left: 900px;
+  left: 980px;
   top: 143px;
 
 }
 @import "slider";
 @import "test";
+@import "button";
+@import "pagination";

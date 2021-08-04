@@ -62,7 +62,7 @@
       <!-- filter-date -->
       <form class="filter-date" action="">
         <p class="filter-date__title">filter date dropdown</p>
-        <input type="text" class="filter-date__form">
+        <input type="text" class="filter-date__form" placeholder="19 авг - 23 авг">
         <i class="material-icons">keyboard_arrow_down</i>
       </form>
       <!-- subscription -->
@@ -198,28 +198,52 @@
         </button>
       </div>
       <!-- Rate button -->
-      <div class="rate-button" onmousedown="return false" onselectstart="return false">
+      <div class="rate-buttons">
         <p class="rate-button__title">rate button</p>
-        <label>
-          <input class="rate-button__star" type="checkbox" name="">
-          <i class="material-icons">star</i>
-        </label>
-        <label>
-          <input class="rate-button__star" type="checkbox" name="">
-          <i class="material-icons">star</i>
-        </label>
-        <label>
-          <input class="rate-button__star" type="checkbox" name="">
-          <i class="material-icons">star</i>
-        </label>
-        <label>
-          <input class="rate-button__star" type="checkbox" name="">
-          <i class="material-icons">star</i>
-        </label>
-        <label>
-          <input class="rate-button__star" type="checkbox" name="">
-          <i class="material-icons">star_border</i>
-        </label>
+        <div class="rate-button" onmousedown="return false" onselectstart="return false">
+          <label>
+            <input class="rate-button__star" type="checkbox" name="">
+            <i class="material-icons">star</i>
+          </label>
+          <label>
+            <input class="rate-button__star" type="checkbox" name="">
+            <i class="material-icons">star</i>
+          </label>
+          <label>
+            <input class="rate-button__star" type="checkbox" name="">
+            <i class="material-icons">star</i>
+          </label>
+          <label>
+            <input class="rate-button__star" type="checkbox" name="">
+            <i class="material-icons">star</i>
+          </label>
+          <label>
+            <input class="rate-button__star" type="checkbox" name="">
+            <i class="material-icons">star_border</i>
+          </label>
+        </div>
+        <div class="rate-button" onmousedown="return false" onselectstart="return false">
+          <label>
+            <input class="rate-button__star" type="checkbox" name="">
+            <i class="material-icons">star</i>
+          </label>
+          <label>
+            <input class="rate-button__star" type="checkbox" name="">
+            <i class="material-icons">star</i>
+          </label>
+          <label>
+            <input class="rate-button__star" type="checkbox" name="">
+            <i class="material-icons">star</i>
+          </label>
+          <label>
+            <input class="rate-button__star" type="checkbox" name="">
+            <i class="material-icons">star</i>
+          </label>
+          <label>
+            <input class="rate-button__star" type="checkbox" name="">
+            <i class="material-icons">star</i>
+          </label>
+        </div>
       </div>
       <!-- guest -->
       <form class="guest" method="#">
@@ -257,6 +281,19 @@
           <button class="guest__apply-button" type="submit">Применить</button>
         </ul>
       </form>
+      <form class="rich-checkbox-button" action="">
+        <p class="rich-checkbox-button__title">rich checkbox buttons</p>
+        <label>
+          <input class="rich-checkbox-button__checkbox" type="checkbox" name="wide-corridor">
+          <p class="rich-checkbox-button__text">Широкий коридор</p>
+          <p class="rich-checkbox-button__text-2">Ширина коридоров в номере не&nbspменее 91 см.</p>
+        </label>
+        <label>
+          <input class="rich-checkbox-button__checkbox" type="checkbox" name="disabled">
+          <p class="rich-checkbox-button__text">Помощник для инвалидов </p>
+          <p class="rich-checkbox-button__text-2">На 1 этаже вас встретит специалист и&nbspпроводит до номера.</p>
+        </label>
+      </form>
 
       <!-- ---------- -->
     </div>
@@ -264,6 +301,25 @@
       <div class="range-slider">
         <p class="range-slider__title">Range Slider</p>
         <div class="slider"></div>
+      </div>
+      <!-- buttons -->
+      <div class="buttons">
+        <p class="buttons__title">buttons</p>
+        <button type="button" class="buttons__button">click me</button>
+        <button type="button" class="buttons__button">click me</button>
+        <button type="button" class="buttons__button-border"><span>click me</span></button>
+        <button type="button" class="buttons__button-border"><span>click me</span></button><br>
+        <button type="button" class="buttons__button-no-border">click me</button>
+        <button type="button" class="buttons__button-no-border">click me</button>
+        <button type="button" class="buttons__button-buy">Перейти к оплате
+          <i class="material-icons">arrow_forward</i>
+        </button>
+      </div>
+      <div class="pagination">
+        <div class="pagination__list"></div>
+        <ul>.
+          <li><i class="material-icons arrow_forward">arrow_forward</i></li>
+        </ul>
       </div>
     </div>
   </div>
@@ -276,6 +332,7 @@
   <script src="js/room.js"></script>
   <script src="js/checkbox-list.js"></script>
   <script src="js/guest.js"></script>
+  <script src="js/pagination.js"></script>
   <!-- <script src="js/slider.js"></script> -->
 </body>
 

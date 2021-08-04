@@ -20,8 +20,13 @@ guestForm.forEach((elem) => {
 guestButtons.forEach((elem) => {
   console.log(elem)
 
-  /* if (elem.innerHTML === "-" && elem.nextElementSibling.innerHTML == 1) {
-    elem.style.color = "red";
+  if (elem.innerHTML === "-" && elem.nextElementSibling.innerHTML > 0) {
+    console.log(elem.nextElementSibling.innerHTML)
+    elem.disabled = true;
+  }
+  /* if (elem.innerHTML === "-" && elem.nextElementSibling.innerHTML >= 1) {
+    console.log(elem.nextElementSibling.innerHTML)
+    elem.disabled = false;
   } */
 
   elem.addEventListener("click", () => {

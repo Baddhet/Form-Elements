@@ -1,0 +1,43 @@
+.rich-checkbox-button {
+  margin-top: 255px;
+  width: 266px;
+  &__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 16.5px;
+  }
+  &__checkbox {
+    -webkit-appearance: none;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 20px;
+    width: 20px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    float: left;
+    outline: none;
+    position: relative;
+  }
+  &__checkbox:checked {
+    border: 1px solid #bc9cff;
+    background: url(../img/check.svg) 50% 50% no-repeat;
+  }
+  &__text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    margin-bottom: 7px;
+  }
+  &__text-2 {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(31, 32, 65, 0.5);
+    margin-bottom: 9px;
+  }
+}
